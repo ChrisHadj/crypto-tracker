@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout";
 import Styles from "./coin.module.css";
+import Image from "next/image";
 
 import React from "react";
 
@@ -8,7 +9,9 @@ const Coin = ({ coin }) => {
     <Layout>
       <div className={Styles.coin_page}>
         <div className={Styles.coin_container}>
-          <img
+          <Image
+            width={250}
+            height={250}
             src={coin.image.large}
             alt={coin.name}
             className={Styles.coin_image}
